@@ -1,0 +1,23 @@
+name: Luis Justin
+dp: https://s.gravatar.com/avatar/e655417468fe9d965cddf68455f557d9?s=460
+description: "
+  <p>
+    Young developer who ventures into various technologies and lives in São Paulo, Brazil
+  </p>
+  <br/>
+  <p>
+    You should follow him on <a href='https://github.com/HelloWar75' target='_blank'>Github</a>
+  </P>
+"
+email: luis.justin@2labs.dev
+contact:
+  - title: linkedin
+    url: https://www.linkedin.com/in/luisjustin/
+  - title: github
+    url: https://github.com/HelloWar75
+  - title: twitter
+    url: https://twitter.com/HelloWar75
+  - title: dev
+    url: https://dev.to/hellowar75
+  - title: email
+    url: mailto:luis.justin@2labs.dev
