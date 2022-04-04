@@ -3,6 +3,8 @@ layout: post
 date: '2022-04-04 00:29 -0300'
 published: false
 title: Teste imagem
+categories:
+  - Laravel
 ---
 ## A New Post
 
