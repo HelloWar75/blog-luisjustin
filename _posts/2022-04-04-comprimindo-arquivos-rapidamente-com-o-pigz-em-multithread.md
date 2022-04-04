@@ -20,5 +20,21 @@ Para distribuições baseadas em debian basta utilizar o seguinte comando no seu
 sudo apt-get install pigz
 ```
 
+## Como utilizar
 
+Para comprimir qualquer arquivo basta utilizar o seguinte comando em seu terminar
+```
+pigz nome_do_arquivo.txt
+```
 
+Para algumas pessoas o jeito que ele ira executar este comando pode ser um problema pois ele executa e costuma **deletar o arquivo por padrão** para evitarmos isso basta colocar junto o argumento **-k** ficando assim o comando
+
+```
+pigz -k nome_do_arquivo.txt
+```
+
+Já sobre seus niveis de compressão eu descobri que ele suporta vários variando do **1 ao 9** para utilizar basta colocar como argumento **-1, -2, -3 ... -9** o comando ira ficar assim
+```
+pigz -9 -k nome_do_arquivo.txt
+```
+Lembrando que neste comando mantive para ele não deletar o arquivo ou seja o parametro `-k`
