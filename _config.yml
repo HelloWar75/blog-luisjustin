@@ -26,11 +26,3 @@ defaults:
       layout: "post"
       permalink: /posts/:year/:month/:day/:title/
 exclude: ["sitemap.xml", "feed.xml", "LICENSE", "README.md"]
-
-prose:
-    metadata:
-        - _posts:
-            - name: "layout"
-                field:
-                    value: "post"
-            
