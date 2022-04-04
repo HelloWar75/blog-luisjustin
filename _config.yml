@@ -17,38 +17,6 @@ plugins:
 exclude: ["sitemap.xml", "feed.xml", "LICENSE", "README.md", "deploy.sh", "server.sh"]
 
 prose:
-<<<<<<< HEAD
-    rooturl: "_posts"
-    siteurl: "https://luisjustin.com.br"
-    media: "assets/images"
-    metadata:
-        _posts:
-          - name: "title"
-              field:
-                element: "text"
-                label: "Titulo"
-          - name: "layout"
-              field:
-                element: "hidden"
-                value: "post"
-          - name: "categories"
-              field:
-                element: "multiselect"
-                label: "Adicionar Categorias"
-                options:
-                  - name: "Laravel"
-                    value: "Laravel"
-                  - name: "PHP"
-                    value: "PHP"
-                  - name: "Python"
-                    value: "Python"
-                  - name: "NGINX"
-                    value: "NGINX"
-          - name: "date":
-              field:
-                element: "hidden"
-                value: CURRENT_DATETIME
-
   rooturl: '_posts'
   siteurl: 'http://luisjustin.com.br/'
   media: 'assets/images'
@@ -92,4 +60,4 @@ prose:
               value: "Linux"
             - name: "Ubuntu"
               value: "Ubuntu"
->>>>>>> 8deb20886e15c47a5fee260b6272c57b03badf89
+
