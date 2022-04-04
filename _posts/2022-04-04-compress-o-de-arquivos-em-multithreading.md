@@ -1,7 +1,7 @@
 ---
 layout: post
 date: '2022-04-04 00:04 -0300'
-published: false
+published: true
 title: Compressão de arquivos em multithreading
 categories:
   - Linux
