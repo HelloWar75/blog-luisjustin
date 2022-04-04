@@ -29,7 +29,7 @@ exclude: ["sitemap.xml", "feed.xml", "LICENSE", "README.md"]
 
 prose:
     metadata:
-        - "all_collections/_posts":
+        - all_collections:
             - name: "layout"
                 field:
                     value: "post"
