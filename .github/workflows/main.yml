@@ -11,14 +11,14 @@ jobs:
     steps:
       - uses: actions/checkout@v1
       - name: Push to server updated site files
-        uses: appleboy/ssh-actions@master
+        uses: appleboy/ssh-action@master
         with:
           host: ${{ secrets.SSH_HOST }}
           username: ${{ secrets.SSH_USERNAME }}
           key: ${{ secrets.SSH_PRIVATE_KEY }}
           script: cd ${{ secrets.SSH_PRIVATE_KEY }} && git pull
       - name: Run Jekyll build
-        uses: appleboy/ssh-actions@master
+        uses: appleboy/ssh-action@master
         with:
           host: ${{ secrets.SSH_HOST }}
           username: ${{ secrets.SSH_USERNAME }}
