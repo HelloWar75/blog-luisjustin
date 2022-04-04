@@ -8,3 +8,8 @@ Ontem tive de efetuar um backup de uma base de dados de 800GB para poder efetuar
 
 Mas porque resolvi utilizar o `PigZ` e não o `Gzip` ? Pelo fato que o `Gzip` embora seja rápido e eficiente ele não tem a principal função do `PigZ` que é justamente o multithread, mas vamos ver agora como ele funciona e como instalar ele em seu Linux.
 
+## Teste
+
+
+
+[Teste Link]( "#Teste")
