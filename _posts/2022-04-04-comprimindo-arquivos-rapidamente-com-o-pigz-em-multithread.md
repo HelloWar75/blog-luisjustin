@@ -12,4 +12,4 @@ Mas porque resolvi utilizar o `PigZ` e não o `Gzip` ? Pelo fato que o `Gzip` em
 
 
 
-[Teste Link]( "#Teste")
+[Teste Link](#Teste)
