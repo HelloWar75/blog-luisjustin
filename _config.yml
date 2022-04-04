@@ -18,7 +18,7 @@ exclude: ["sitemap.xml", "feed.xml", "LICENSE", "README.md", "deploy.sh", "serve
 
 prose:
   rooturl: '_posts'
-  siteurl: 'http://luisjustin.com.br/'
+  siteurl: 'https://luisjustin.com.br/'
   media: 'assets/images'
   metadata:
     _posts:
