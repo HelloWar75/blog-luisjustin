@@ -3,6 +3,8 @@ layout: post
 date: '2022-04-04 00:45 -0300'
 published: true
 title: Comprimindo arquivos rapidamente com o Pigz em multithread
+categories:
+  - Linux
 ---
 Ontem tive de efetuar um backup de uma base de dados de 800GB para poder efetuar a tarefa comecei a pesquisar se existiam soluções de compactação multithread para linux foi onde me deparei com o ´Pigz´ um software que utiliza uma implementação do `Gzip` para compactação em multithread.
 
