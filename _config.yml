@@ -44,8 +44,8 @@ prose:
           value: ""
       - name: "date"
         field:
-          element: "datetime"
-          label: "Splash image"
+          element: "text"
+          label: "Data Da Postagem"
           value: CURRENT_DATETIME
       - name: "categories"
         field:
