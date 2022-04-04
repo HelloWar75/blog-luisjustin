@@ -23,4 +23,4 @@ jobs:
           host: ${{ secrets.SSH_HOST }}
           username: ${{ secrets.SSH_USERNAME }}
           key: ${{ secrets.SSH_PRIVATE_KEY }}
-          script: cd ${{ secrets.PROJECT_PATH }} && ${{ secrets.BUNDLE_EXEC_PATH }} exec jekyll build -d ${{ secrets.JEKYLL_DEST_PATH }}
+          script: cd ${{ secrets.PROJECT_PATH }} && source ./bashrc && bundle exec jekyll build -d ${{ secrets.JEKYLL_DEST_PATH }}
