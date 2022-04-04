@@ -19,6 +19,7 @@ social:
 author:
   name: Luis Justin
   email: luisjustin@protonmail.com
+  twitter: HelloWar75
 
 plugins:
   - jemoji
@@ -32,6 +33,7 @@ defaults:
     values:
       layout: "post"
       permalink: /posts/:year/:month/:day/:title/
+      image: "https://s.gravatar.com/avatar/e655417468fe9d965cddf68455f557d9?s=460"
 
 exclude: ["LICENSE", "README.md", "deploy.sh", "server.sh"]
 
