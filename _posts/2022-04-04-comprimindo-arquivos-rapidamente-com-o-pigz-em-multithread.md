@@ -1,7 +1,7 @@
 ---
 layout: post
 date: '2022-04-04 00:45 -0300'
-published: false
+published: true
 title: Comprimindo arquivos rapidamente com o Pigz em multithread
 ---
 Ontem tive de efetuar um backup de uma base de dados de 800GB para poder efetuar a tarefa comecei a pesquisar se existiam soluções de compactação multithread para linux foi onde me deparei com o ´Pigz´ um software que utiliza uma implementação do `Gzip` para compactação em multithread.
@@ -87,4 +87,17 @@ pigz -dc arquivo_compactado.tar.gz | tar -xf -
 
 ele vai criar a pastas no local onde está seu arquivo
 
+## Limitando threads
+
+O **Pigz** costuma comer bastante nucleos do seu processador pois ele não tem limite para efetuar uma compactação mais rápida ele usa todo seu processador mas temos maneiras de limitar o uso iremos ver logo abaixo um exemplo que pode ser aplicado a todos anteriores
+
+Para efetuar a limitação de nucleos de processador podemos utilizar o parametro **-p** seguido do numero de nucleos que deseja usar de seu processador. Mas lembre-se não coloque um numero que seu hardware não esteja pronto para suportar, segue o exemplo
+
+```shell
+pigz -k -p2 arquivo_para_compactar.txt
+```
+
+mesma coisa se aplica a todos exemplos anteriores.
+
+Obrigado por lerem meu artigo que foi até uma descobertar para mim :D
 
