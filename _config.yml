@@ -14,10 +14,10 @@ plugins:
   - jekyll-sitemap
   - jekyll-feed
 
-collections_dir: all_collections
-collections:
-  posts:
-    output: true
+#collections_dir: all_collections
+#collections:
+#  posts:
+#    output: true
 
 defaults:
   - scope:
@@ -29,7 +29,7 @@ exclude: ["sitemap.xml", "feed.xml", "LICENSE", "README.md"]
 
 prose:
     metadata:
-        - all_collections:
+        - _posts:
             - name: "layout"
                 field:
                     value: "post"

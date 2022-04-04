@@ -1,10 +1,8 @@
 ---
+layout: post
 title: How to configure your nginx to run a Laravel application
-date: '2020-12-09 21:00:00'
-categories:
-- nginx
-- php
-- laravel
+date: 2020-12-09
+categories: ["php", "laravel", "nginx"]
 ---
 
 ![Stack nginx Php Laravel](https://luisjustin.com.br/assets/images/nignx-laravel-php.png)
@@ -32,7 +30,7 @@ After you have completed the installation you need to start your nginx server wi
 sudo systemctl start nginx
 ```
 ## 2. Installing PHP-FPM
-Para instalar o PHP-FPM em sua ultima versão só é preciso digitar o seguinte comando:
+To install PHP-FPM in its latest version you only need to type the following command:
 
 ```shell
 sudo apt install php-fpm
@@ -46,20 +44,20 @@ To install the necessary dependencies just copy and paste the following command 
 ```shell
 sudo apt install php-mysql php-pdo php-mbstring php-xml php-bcmath php-zip
 ```
+
 ## 4. Configuring Nginx to host Laravel
-First you need to open the nginx configuration file, the famous "default" file
+First you need to open the nginx configuration file, the famous “default” file
 
 ```shell
 nano /etc/nginx/sites-available/default
 ```
-
 I will teach you 2 ways to create this configuration, because two ways? For the fact that you can use it both when it is to access by IP server as when you are setting up multiple domains with several applications same or different in laravel.After that you will see the following screen:
 
-![Terminal Configuring Nginx Default Site](https://luisjustin.com.br/assets/images/2020-12-09-terminal-configuring-nginx-default-site.png)
+![Terminal config default site nginx](https://luisjustin.com.br/assets/images/2020-12-09-terminal-configuring-nginx-default-site.png)
 
 now we will modify the script to look like this:
 
-```nginx
+```
 server {
         listen 80;
         root /var/www/html/public;
@@ -84,43 +82,39 @@ server {
                 deny all;
         }
 }
-
 ```
 
-Don't forget to replace in server_name with the domain that will be used for access or you can remove this directive.
+Don’t forget to replace in server_name with the domain that will be used for access or you can remove this directive.
 
-After that you just need to press "CTRL + S" to save and "CTRL + X" if it asks for some confirmation when closing just click "Y".
+After that you just need to press “CTRL + S” to save and “CTRL + X” if it asks for some confirmation when closing just click “Y”.
 
 After that we will type
 
-```shell
+```
 sudo ln -s /etc/nginx/sites-available/default /etc/nginx/sites-enabled/
 ```
 
-This will create a symbolic link by putting the "default" file into nginx sites-enabled as well.
+This will create a symbolic link by putting the “default” file into nginx sites-enabled as well.
 
-Now let's type:
+Now let’s type:
 
-```shell
+```
 nginx -t
 ```
 
 It should show something similar to this:
-![Terminal Result](http://luisjustin.com.br/assets/images/2020-12-09-terminal-result.png)
+![Terminal Result](https://luisjustin.com.br/assets/images/2020-12-09-terminal-result.png)
 
 After that we will type
-
 ```shell
 sudo systemctl reload nginx
 ```
-
 To have nginx reload the configuration files without rebooting.
-
 ## 5. Configure your laravel
-Now you need to configure ".env" of your laravel, this is an individual configuration so I will skip this step but I will remind you that you need that the Application URL in laravel only needs to be your domain example:
+Now you need to configure “.env” of your laravel, this is an individual configuration so I will skip this step but I will remind you that you need that the Application URL in laravel only needs to be your domain example:
 ```
 my_website.com
 ```
 
-## 6. All set, let's test it!
+## 6. All set, let’s test it!
 Now to test it is simple you can open the link to your website in your browser and you will see that laravel is running perfectly.
