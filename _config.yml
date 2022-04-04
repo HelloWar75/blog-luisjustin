@@ -48,7 +48,7 @@ prose:
               field:
                 element: "hidden"
                 value: CURRENT_DATETIME
-=======
+
   rooturl: '_posts'
   siteurl: 'http://luisjustin.com.br/'
   media: 'assets/images'
