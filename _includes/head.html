@@ -14,5 +14,27 @@
   {% if page.layout == "post" %}
   <script defer src="{{site.baseurl}}/assets/js/lbox.js"></script>
   {% endif %}
+  {% if page.layout == "post" %}
+  <style>
+    .share-page {
+        text-align: center;
+        background: #25282c;
+        color: white;
+        padding: 8px 15px;
+        border-radius: 5px;
+        margin: 1.5 0;
+    }
+
+    .share-page > a {
+        font-weight: 700;
+        color: #fff;
+        margin-left: 10px;
+    }
+
+    .share-page > a:hover {
+      border-bottom: 1px dashed #fff;
+    }
+  </style>
+  {% endif %}
   {% seo %}
 </head>

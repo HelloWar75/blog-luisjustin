@@ -3,6 +3,18 @@ markdown: kramdown
 url: ""
 baseurl: ""
 
+twitter:
+  username: HelloWar75
+  card: summary
+
+social:
+  name: Luis Henrique Justin
+  links:
+    - https://www.linkedin.com/in/luisjustin/
+    - https://github.com/HelloWar75
+    - https://twitter.com/HelloWar75
+    - https://dev.to/hellowar75
+
 # for atom feed
 author:
   name: Luis Justin
