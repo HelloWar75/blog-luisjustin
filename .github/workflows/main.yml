@@ -16,11 +16,11 @@ jobs:
           host: ${{ secrets.SSH_HOST }}
           username: ${{ secrets.SSH_USERNAME }}
           key: ${{ secrets.SSH_PRIVATE_KEY }}
-          script: cd ${{ secrets.SSH_PRIVATE_KEY }} && git pull
+          script: cd ${{ secrets.PROJECT_PATH }} && git pull
       - name: Run Jekyll build
         uses: appleboy/ssh-action@master
         with:
           host: ${{ secrets.SSH_HOST }}
           username: ${{ secrets.SSH_USERNAME }}
           key: ${{ secrets.SSH_PRIVATE_KEY }}
-          script: cd ${{ secrets.SSH_PRIVATE_KEY }} && bundle exec jekyll build -d /var/www/luisjustin-com-br/
+          script: cd ${{ secrets.PROJECT_PATH }} && bundle exec jekyll build -d ${{ secrets.JEKYLL_DEST_PATH }}
